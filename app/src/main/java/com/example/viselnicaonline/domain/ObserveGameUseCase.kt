@@ -1,4 +1,9 @@
 package com.example.viselnicaonline.domain
 
-class ObserveGameUseCase {
+import javax.inject.Inject
+
+class ObserveGameUseCase @Inject constructor(
+    private val repository: GameRepository
+) {
+    operator fun invoke(gameId: String) = repository.observeGame(gameId)
 }

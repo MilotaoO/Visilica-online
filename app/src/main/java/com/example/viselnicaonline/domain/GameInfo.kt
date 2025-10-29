@@ -1,6 +1,6 @@
 package com.example.viselnicaonline.domain
 
-data class Game(
+data class GameInfo(
     val id: String,
     val player1: String?,
     val player2: String?,
